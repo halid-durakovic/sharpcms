@@ -1,4 +1,7 @@
-#SharpCms
+<img align="left" src="https://avatars0.githubusercontent.com/u/7360948?v=3" />
+
+&nbsp;SharpCms<br /><br />
+=============
 
 A simple content management system that lives `outside` of your website with first class REST and Security integration.
 
