@@ -1,0 +1,19 @@
+#!/bin/bash
+
+sudo chown -R mssql ./test/
+
+echo 'sharpcms.config.tests =>'
+
+dotnet test ./test/sharpcms.config.tests/ | grep 'Test Count:'
+
+echo 'sharpcms.database.tests =>'
+
+dotnet test ./test/sharpcms.database.tests/ | grep 'Test Count:'
+
+echo 'sharpcms.content.tests =>'
+
+dotnet test ./test/sharpcms.content.tests/ | grep 'Test Count:'
+
+echo 'sharpcms.api.tests =>'
+
+dotnet test ./test/sharpcms.api.tests/ | grep 'Test Count:'

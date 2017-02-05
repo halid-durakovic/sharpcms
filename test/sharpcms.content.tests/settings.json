@@ -1,0 +1,17 @@
+﻿{
+  "DbConfig": {
+    "ConnectionStrings": [
+      {
+        "Name": "fragments",
+        "ConnectionString": "Server=localhost;Database=sharpcms.content.tests.fragments;User Id=sharpcms; Password=password;MultipleActiveResultSets=true;",
+        "Provider": "SqlServer"
+      },
+      {
+        "Name": "fragmentQueries",
+        "ConnectionString": "Server=localhost;Database=sharpcms.content.tests.fragmentQueries;User Id=sharpcms; Password=password;MultipleActiveResultSets=true;",
+        "Provider": "SqlServer"
+      }
+    ]
+  } 
+}  
+

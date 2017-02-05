@@ -1,0 +1,12 @@
+﻿{
+  "DbConfig": {
+    "ConnectionStrings": [
+      {
+        "Name": "content",
+        "ConnectionString": "Server=localhost;Database=sharpcms.api.tests.content;User Id=sharpcms; Password=password;MultipleActiveResultSets=true;",
+        "Provider": "SqlServer"
+      }
+    ]
+  } 
+}  
+

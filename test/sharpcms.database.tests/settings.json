@@ -1,0 +1,17 @@
+﻿{
+  "DbConfig": {
+    "ConnectionStrings": [
+      {
+        "Name": "db1",
+        "ConnectionString": "Server=localhost;Database=sharpcms.database.tests.db1;User Id=sharpcms; Password=password;MultipleActiveResultSets=true;",
+        "Provider": "SqlServer"
+      },
+      {
+        "Name": "db2",
+        "ConnectionString": "Server=localhost;Database=sharpcms.database.tests.db2;User Id=sharpcms; Password=password;MultipleActiveResultSets=true;",
+        "Provider": "SqlServer"
+      }
+    ]
+  } 
+}  
+

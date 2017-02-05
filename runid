@@ -1,0 +1,5 @@
+#!/bin/bash
+
+sudo chown -R mssql ./src/
+
+dotnet run -p ./src/sharpcms.web.id/project.json ./src/sharpcms.web.id/ &

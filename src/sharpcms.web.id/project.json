@@ -1,0 +1,64 @@
+{
+  "userSecretsId": "sharpcms-8dba837e-d39b-4500-bd76-df3d7e9f69d2",
+
+  "dependencies": {
+    "Microsoft.AspNetCore.Diagnostics": "1.1.*",
+    "Microsoft.AspNetCore.Server.IISIntegration": "1.1.*",
+    "Microsoft.AspNetCore.Server.IISIntegration.Tools": "1.0.0-preview2-final",
+    "Microsoft.AspNetCore.Server.Kestrel": "1.1.*",
+    "Microsoft.Extensions.Logging.Console": "1.1.*",
+    "Microsoft.AspNetCore.Mvc": "1.1.*",
+    "Microsoft.AspNetCore.StaticFiles": "1.1.*",
+    "Microsoft.AspNetCore.Authentication.Google": "1.1.*",
+    "IdentityServer4": "1.0.0",
+    "sharpcms.security": "1.0.0-*",
+    "Microsoft.Extensions.Configuration.UserSecrets": "1.1.0",
+    "sharpcms.startup": "1.0.0-*"
+  },
+
+  "tools": {
+    "Microsoft.Extensions.SecretManager.Tools": "1.1.0-preview4-final"
+  },
+
+  "frameworks": {
+    "netcoreapp1.1": {
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "type": "platform",
+          "version": "1.1.0"
+        }
+      },
+      "imports": "dnxcore50"
+    }
+  },
+
+  "buildOptions": {
+    "emitEntryPoint": true,
+    "preserveCompilationContext": true,
+    "copyToOutput": {
+      "include": [
+        "*.json"
+      ]
+    }
+  },
+
+  "runtimeOptions": {
+    "configProperties": {
+      "System.GC.Server": true
+    }
+  },
+
+  "publishOptions": {
+    "include": [
+      "wwwroot",
+      "**/*.cshtml",
+      "appsettings.json",
+      "web.config"
+    ]
+  },
+
+
+  "scripts": {
+    "postpublish": [ "dotnet publish-iis --publish-folder %publish:OutputPath% --framework %publish:FullTargetFramework%" ]
+  }
+}

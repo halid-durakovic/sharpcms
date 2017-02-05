@@ -1,0 +1,14 @@
+﻿{
+  "AnyAppSetting": "AnyAppSettingValue",
+  "AnyTypeSetting": {
+    "AnyTypeKey1": "AnyTypeKeyValue",
+    "AnotherTypeSetting1": {
+      "AnotherTypeKey": "AnotherTypeKeyValue"
+    },
+    "AnotherTypeSettingList1": [
+      {
+        "AnotherTypeKey": "AnotherTypeKeyValueList"
+      }
+    ]
+  }  
+}
